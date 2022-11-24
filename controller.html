@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='ja'>
+	<head>
+		<meta charset='UTF-8'>
+		<style>
+			.wrapper{background-color:silver;}
+			.container{max-width:500px;margin:0 auto;padding:2px 0px;
+				background-color:floralwhite;border:groove 30px salmon;
+			}
+			p {margin:0 auto;text-align:center;font-weight:bold;font-size:16pt;}
+			form{max-width:360px;margin:0 auto;text-align:center}
+			input {margin:15px;border-radius:5px;font-weight:bold;background-color:bisque;border-color:darksalmon}
+			.main {width:80px;height:50px}
+			.sub {width:50px;height:40px}
+			.stop {width:90px;height:90px;border-radius:50px;}
+		</style>
+		<title>WiFiラジコン操作画面</title>
+	</head>
+	<section class="wrapper">
+		<div class="container">
+			<p>WiFi_Car Controller</p>
+			<!-- ここにHTMLを書き込みます -->
+			<form method='get'>
+				<input class='sub' type='submit' name='fl' value='前左' />
+				<input class='main' type='submit' name='fo' value='前' />
+				<input class='sub' type='submit' name='fr' value='前右' />
+				<input class='main' type='submit' name='le' value='左' />
+				<input class='stop' type='submit' name='st' value='停止' />
+				<input class='main' type='submit' name='ri' value='右' />
+				<input class='sub' type='submit' name='bl' value='後左' />
+				<input class='main' type='submit' name='ba' value='後ろ' />
+				<input class='sub' type='submit' name='br' value='後右' />
+			</form>
+		</div>
+	</section>
+</html>
